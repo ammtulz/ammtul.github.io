@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-gb">
+<head>
+
+<meta charset="uft-8" />
+<meta description="JavaScript syntax, web development" />
+<meta name="viewport" content="width=width-device, initial-scale=1, strink-to-fit=0" />
+
+<title>Using JvaScript syntax </title>
+
+<style>
+body {
+
+font-family: arial, helvetica sans-serif;
+}
+
+</style>
+
+</head>
+<body>
+
+<!--Working with innerHTML -->
+
+<div id="students"> </div>
+
+<div id="pagefooter"></div>
+
+<script>
+let names = ["Jay", "Evan", "Niki", "Jake", "Jennie", "Laura"];
+document.getElementById("students").innerHTML = names;
+
+let mym = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+document.getElementById("pagefooter").innerHTML = mym;
+
+document.write(mym.length -1);
+
+const planets = new Array("Jupiter" , "Mars" , "Neptune" , "Earth")
+document.write("<br/>" + planets.length + "<br/>");
+
+/*Print out the Earth element in the array*/
+document.write(planets[2]);
+
+document.write("<br/>")
+
+const nums = [12, 45, 9, 36, 59, 68, 80, 97, 100];
+
+const maxnumber = Math.max.apply(null, nums);
+document.write("<br/> The highest number is: " + maxnumber + "<br/>");
+
+const lownumber = Math.min.apply(null, nums);
+document.write("<br/> The lowest number is: " + lownumber + "<br/>"); 
+
+/*Add elements to an array*/ 
+const items = []
+items.push("Television" , "Laptop" , "Mobile Phone" , "Tablet");
+document.write(items.length); 
+document.write("<br/>" + items[0])
+
+/*Using the indexOff fuction*/
+const subjects = ["Law", "Geography", "Maths", "Education", "Geography"]
+
+document.write(subjects.indexOf("Education"));
+document.write("<br/>" + subjects.indexOf("Geography", 2));
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check that email is valid</title>
+
+    <script type="text/javascript">
+function checkemail(){
+    var emailBox = document.getElementById("email");
+
+    if(emailBox.value.indexOf("@") != -1 && emailBox.value.indexOf(".") != -1)
+    alert("Good email address");
+    else {
+    alert("Enter a valid email address");
+    }
+}
+    </script>
+
+</head>
+<body>
+    
+    <p>Email String Check</p>
+
+    Email: <input type="text" id="email">
+    <input type="button" value="Submit" onclick="checkemail()"> 
+
+</body>
+</html>

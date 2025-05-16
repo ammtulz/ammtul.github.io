@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change page background colour</title>
+
+<script type="text/javascript">
+function changeBg(){
+
+    var UserName = document.forms[0].UserName.value;
+    var BgColor = document.BgForm.BgColor.value;
+
+    document.body.style.backgroundColor = BgColor;
+    alert(UserName + ", the background color is " + bgColor + "." );
+}
+
+</script>
+
+</head>
+<body onload="changeBg">
+
+    <p>Change background colour</p>
+    <form name ="BgForm">
+        Your name:        <input type="text" name="UserName" size="10"> </br>
+        Background Color: <input type="text" name="BgColor" size="10"> </br> 
+        <input type="button" value="Change Background Color" onclick="changeBg();"> 
+    
+</form>
+</body>
+</html>
